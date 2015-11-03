@@ -50,7 +50,7 @@ while names.length > 0
       names.delete_at(sample_name_index)
     end 
 
-    if names.length == 1 && group_size_const.odd?
+    if names.length == 1 and group_size_const.odd?
 
       #puts "AAAAAA"
       #p names
