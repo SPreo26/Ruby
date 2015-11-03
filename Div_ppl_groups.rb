@@ -34,11 +34,11 @@ while names.length > 0
     puts "length is #{names.length}"
 
     if names.length>0
-      p names
-      p name_groups
-      p group_index
-      p index_within_group
-      p sample_name_index
+      #p names
+      #p name_groups
+      #p group_index
+      #p index_within_group
+      #p sample_name_index
       name_groups[group_index][index_within_group]=\
                           names[sample_name_index]
     
@@ -80,14 +80,14 @@ name_groups.each_with_index do |group, group_index|
   group.each_with_index do |name, index_within_group|
     
     if index_within_group == group.length-1
-      comma_or_period = "."
+      comma_or_no = ""
     else
-      comma_or_period = ", "
+      comma_or_no = ", "
     end
     #p name
     #p names_in_group
 
-    names_in_group += "#{name}#{comma_or_period}"
+    names_in_group += "#{name}#{comma_or_no}"
 
   end
 
